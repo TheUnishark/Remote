@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ProxyBlocker Terms</title>
+		<style>
+			body {
+				max-width: 800px;
+				padding: 1em 0.5em;
+				margin: auto;
+				font-family: sans-serif;
+			}
+			
+			h1:after, h2:after {
+				display: block;
+				content: '';
+				width: 100%;
+				height: 1px;
+				background-color: #aaa;
+			}
+			
+			p {
+				text-align: justify;
+			}
+			
+			code {
+				padding: 2pt 3pt;
+				background-color: #eee;
+				border-radius: 2pt;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="proxyblocker-terms">ProxyBlocker Terms</h1>
+		<h2 id="definitions">Definitions</h2>
+		<p>(1) Player: Represents a user account in the video-game Broke Protocol.<br>
+		(2) Proxy: Represents one or multiple intermediate server between the user and the Broke Protocol server. It includes but is not limited to public VPN services.<br>
+		(3) IP: Represents the account&#39;s public Internet Protocol address such as an IPv4 or IPv6.<br>
+		(4) ProxyBlocker API: Represents the service used to send players IP and receive validation information.</p>
+		<br>
+		<h2 id="service-description">Service Description</h2>
+		<p>ProxyBlocker is a service by TheUnishark that aims to prevent players from using proxies to play in a Broke Protocol server.</p>
+		<br>
+		<h2 id="user-data">User Data</h2>
+		<h3 id="conditions">Conditions:</h3>
+		<p>This service will reject a connection to the server if they do not accept the terms.</p>
+		<p>If a player&#39;s IP is unable to be verified the player will be allowed to play the Broke Protocol server and will tell the administration of the server this player is playing without verification.</p>
+		<p>A player can skip all verifications if their account have the permission <code>pb.bypass</code>.</p>
+		<br>
+		<h3 id="usage">Usage:</h3>
+		<p>This service sends the player&#39;s IP to third parties to verify if it&#39;s detected as a proxy. This IP is saved in a database to make the process faster.</p>
+		<p>This service will maintain the confidentiality of the player&#39;s IP address and will not share it with any third-party organizations or individuals unless required by law.</p>
+		<p>This service will ensure the security of the player&#39;s IP address and will take all necessary measures to prevent unauthorized access or misuse.</p>
+		<p>This service will comply with all applicable laws and regulations regarding the handling and processing of user data.</p>
+		<p>Any use of the ProxyBlocker API without authorization will result in legal consequences.</p>
+		<br>
+		<h3 id="third-parties">Third parties:</h3>
+		<p>This service uses Google Cloud services to host the ProxyBlocker API and send the IP address to IPQualityScore.</p>
+		<p>This service sends players IP to IPQualityScore to verify them. The only collected information is the proxy field result.</p>
+		<p>This service uses Free MySQL Hosting services to save players IP.</p>
+		<p><strong>Links:</strong><br>
+		Google Cloud: <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank">https://cloud.google.com/terms/cloud-privacy-notice</a><br>
+		IPQualityScore: <a href="https://www.ipqualityscore.com/privacy-policy" target="_blank">https://www.ipqualityscore.com/privacy-policy</a><br>
+		Free MySQL Hosting: <a href="https://www.freemysqlhosting.net/acceptable-use-policy/" target="_blank">https://www.freemysqlhosting.net/acceptable-use-policy/</a></p>
+		<br>
+		<h3 id="rgpd">RGPD</h3>
+		<p>The players can see their information with the in-game command <code>/pb-get</code>.<br>
+		The players can opt-out of this service anytime by using the in-game command <code>/pb-remove</code> or by contacting TheUnishark with their IP to remove it from the database (contact information below).</p>
+		<p><strong>Contact information:</strong><br>
+		Discord: <em>TheUnishark#8603</em><br>
+		E-Mail: <em><a href="mailto:theunishark@gmx.fr" target="_blank">theunishark@gmx.fr</a></em></p>
+	</body>
+</html>
