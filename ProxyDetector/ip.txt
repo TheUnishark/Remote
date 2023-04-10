@@ -1,1 +1,1 @@
-http://35.227.142.131:7000/proxydetector
+http://34.83.76.143:7000/proxydetector
