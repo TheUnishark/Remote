@@ -35,30 +35,31 @@
 		<h1 id="proxyblocker-terms">ProxyBlocker Terms</h1>
 		<h2 id="definitions">Definitions</h2>
 		<p>(1) Player: Represents a user account in the video-game Broke Protocol.<br>
-		(2) Proxy: Represents one or multiple intermediate server between the user and the Broke Protocol server. It includes but is not limited to public VPN services.<br>
+		(2) Proxy: Represents one or multiple intermediate server between the user and the Broke Protocol server. It includes but is not limited to VPN services.<br>
 		(3) IP: Represents the account&#39;s public Internet Protocol address such as an IPv4 or IPv6.<br>
-		(4) ProxyBlocker API: Represents the service used to send players IP and receive validation information.</p>
+		(4) ProxyBlocker API: Represents the service used to validate players IP.</p>
 		<br>
 		<h2 id="service-description">Service Description</h2>
 		<p>ProxyBlocker is a service by TheUnishark that aims to prevent players from using proxies to play in a Broke Protocol server.</p>
+		<p>Players who connects to a Broke Protocol server with this plugin will be asked if they allow to send their information through this server. They have to agree in order to be able to play the server, otherwise they will not be allowed to perform any in-game interaction in the server.</p>
+		<p>ProxyBlocker reserve themselves the right to manually block or unblock any IP if they think it's necessary.</p>
 		<br>
 		<h2 id="user-data">User Data</h2>
 		<h3 id="conditions">Conditions:</h3>
-		<p>This service will reject a connection to the server if they do not accept the terms.</p>
-		<p>If a player&#39;s IP is unable to be verified the player will be allowed to play the Broke Protocol server and will tell the administration of the server this player is playing without verification.</p>
+		<p>This service will reject a connection to the server if they do not accept the terms or if their IP is detected as a proxy IP.</p>
+		<p>If a player&#39;s IP is unable to be verified by the ProxyBlocker API, the player will be allowed to play the Broke Protocol server and will tell the administration of the server this player is playing without verification.</p>
 		<p>A player can skip all verifications if their account have the permission <code>pb.bypass</code>.</p>
 		<br>
 		<h3 id="usage">Usage:</h3>
 		<p>This service sends the player&#39;s IP to third parties to verify if it&#39;s detected as a proxy. This IP is saved in a database to make the process faster.</p>
-		<p>This service will maintain the confidentiality of the player&#39;s IP address and will not share it with any third-party organizations or individuals unless required by law.</p>
+		<p>This service will maintain the confidentiality of the player&#39;s IP address and will not share it with any other third-party organizations or individuals unless required by law.</p>
 		<p>This service will ensure the security of the player&#39;s IP address and will take all necessary measures to prevent unauthorized access or misuse.</p>
 		<p>This service will comply with all applicable laws and regulations regarding the handling and processing of user data.</p>
 		<p>Any use of the ProxyBlocker API without authorization will result in legal consequences.</p>
 		<br>
 		<h3 id="third-parties">Third parties:</h3>
-		<p>This service uses Google Cloud services to host the ProxyBlocker API and send the IP address to IPQualityScore.</p>
-		<p>This service sends players IP to IPQualityScore to verify them. The only collected information is the proxy field result.</p>
-		<p>This service uses Free MySQL Hosting services to save players IP.</p>
+		<p>ProxyBlocker takes all necessary measures to protect your data. However, we use third party services and we are not responsible of how they manage data. For further information or request, please contact them.<br>
+		Note that the only information sent to the third parties are your IP address, and the detection state of it.</p>
 		<p><strong>Links:</strong><br>
 		Google Cloud: <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank">https://cloud.google.com/terms/cloud-privacy-notice</a><br>
 		IPQualityScore: <a href="https://www.ipqualityscore.com/privacy-policy" target="_blank">https://www.ipqualityscore.com/privacy-policy</a><br>
